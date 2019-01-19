@@ -68,11 +68,11 @@ $font-fam: Arial, Helvetica, sans-serif;
 
 .second > div {
     @extend %box;
-    background-color: tomato;
+    background-color: yellow;
 }
 
 .second > div:hover {
-    background-color: orange;
+    background-color: yellowgreen;
 }
 
 body {
