@@ -62,11 +62,11 @@
 }
 
 .second > div {
-  background-color: tomato;
+  background-color: yellow;
 }
 
 .second > div:hover {
-  background-color: orange;
+  background-color: yellowgreen;
 }
 
 body {
