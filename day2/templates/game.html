@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='game.css') }}">
+    <title>TTT</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+
+        {% if game_over == None %}
+        <table class="game-table">
+        {% else %}
+        <table class="game-table game-over">
+        {% endif %}
+            {% for i in range(3) %}
+            <tr>
+                {% for j in range(3) %}
+                    {% if game[i][j] %}
+                    <td class="claimed {{ game[i][j] }}">
+                            <p class="square">{{ game[i][j] }}</p>
+                    {% else %}
+                    <td class="unclaimed {{ turn }}">
+                            <a class="square" href="{{ url_for('play',row=i,col=j)}}">{{ turn }}</a>
+                    {% endif %}
+                    </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        <p id="reset">
+            <a href="{{ url_for('reset') }}">Reset game</a>
+        </p>
+        {% if game_over != None %}
+        <p id="over">{{ game_over }} won!</p>
+        {% else %}
+        <p id="turn">{{ turn }}'s turn!</p>
+        {% endif %}
+    </div>
+</body>
+</html>
