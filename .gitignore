@@ -2,3 +2,5 @@
 .vscode/*
 */venv/*
 *.pyc
+cs50-beyond-day4-app
+cs50-beyond-day4-app/*

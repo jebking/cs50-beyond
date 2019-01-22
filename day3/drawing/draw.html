@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="draw.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="draw.js"></script>
+    <title>Draw</title>
+</head>
+<body>
+    <nav>
+        <ul class="container">
+            <li class="brand">
+                Draw
+            </li>
+            <li>
+                <svg id="brush-preview" ></svg> 
+            </li>
+            <li>
+                <input type="range" id="size-slider" name="size-slider" min="1" max="30"  value="5" onchange="update_preview()">
+            </li>
+            <li class="rgb-selector">
+                <input type="range" id="red-slider"   name="red-slider"   min="0" max="255" value="0" onchange="update_preview()">
+                <input type="range" id="green-slider" name="green-slider" min="0" max="255" value="0" onchange="update_preview()">
+                <input type="range" id="blue-slider"  name="blue-slider"  min="0" max="255" value="0" onchange="update_preview()">
+            </li>
+            <li>
+                <button onclick="erase()">Erase all</button>
+            </li>
+        </ul>
+    </nav>
+    <svg id="canvas"></svg>
+</body>
+</html>

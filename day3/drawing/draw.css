@@ -1,0 +1,47 @@
+button {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #d14444;
+}
+
+.container {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    align-items: center;
+}
+
+li {
+    padding: 0 5px;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 28px;
+    margin-right: 50px;
+    border: 1px solid black;
+    background-color: azure;
+}
+
+body {
+    background-color: gray;
+}
+
+#canvas {
+    background-color: white;
+    width:100%;
+    height:800px;
+}
+
+#brush-preview {
+    height: 60px;
+    width: 60px;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.rgb-selector {
+    display: flex;
+    flex-direction: column;
+}
