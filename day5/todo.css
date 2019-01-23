@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(125,125,200);
+    margin-top:0;
+}
+
+#app {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: azure;
+    border: 10px solid rgb(150, 150, 50);
+}
+
+#amount {
+    text-align: center;
+}
+
+.new-task-box{
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
+ 
+ul {
+    list-style-type: none;
+}
+
+.far.fa-check-square {
+    color: green;
+}
+
+button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+}
+
+input[type="text"] {
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+i {
+    font-size: 2.0em;
+}
+
+.remove-btn {
+    background-color: azure;
+    border: none;
+    padding: none;
+    margin: none;
+}
